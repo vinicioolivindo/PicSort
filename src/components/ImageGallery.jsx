@@ -54,7 +54,7 @@ const ImageGallery = ({ query }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="columns-2 md:columns-3 gap-4 p-4">
+      <div className="columns-2 md:columns-3 gap-4 ">
         {images.map((image) => (
           <div key={image.id} className="mb-4 break-inside-avoid">
             <img

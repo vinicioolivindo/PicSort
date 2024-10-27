@@ -19,7 +19,7 @@ function App() {
     <div className="min-h-screen w-full bg-gray-200 flex flex-col items-center">
       <Header onSubmit={handleSearch} notInPageFav={true}/>
 
-      <div className="max-w-4xl w-full p-4 mt-10">
+      <div className="max-w-4xl w-full p-4 mt-7">
         <ImageGallery query={searchQuery} />
       </div>
     </div>
