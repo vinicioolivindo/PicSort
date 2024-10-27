@@ -16,10 +16,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gray-200 flex flex-col items-center">
-      <Header onSubmit={handleSearch} notInPageFav={true}/>
+    <div className="min-h-screen w-full bg-gray-200 flex flex-col items-center relative">
+      <div className="fixed z-50">
+        <Header onSubmit={handleSearch} notInPageFav={true}/>
+      </div>
 
-      <div className="max-w-4xl w-full p-4 mt-7">
+      <div className="max-w-4xl w-full p-4 mt-7 mt-20">
         <ImageGallery query={searchQuery} />
       </div>
     </div>
