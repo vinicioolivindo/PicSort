@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Minus, MinusCircle, RemoveFormatting } from "lucide-react";
+import { MinusCircle } from "lucide-react";
 import Header from "../components/Header";
 import useLocalStorage from "../components/useLocalStorage";
 import Popup from "../components/Popup"; // Importe o Popup
