@@ -21,7 +21,7 @@ function App() {
         <Header onSubmit={handleSearch} notInPageFav={true}/>
       </div>
 
-      <div className="max-w-4xl w-full p-4 mt-7 mt-20">
+      <div className="max-w-4xl w-full p-4 mt-20">
         <ImageGallery query={searchQuery} />
       </div>
     </div>
