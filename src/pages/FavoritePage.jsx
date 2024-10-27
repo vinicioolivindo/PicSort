@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ZoomIn } from "lucide-react";
+import { Minus, MinusCircle, RemoveFormatting } from "lucide-react";
 import Header from "../components/Header";
 import useLocalStorage from "../components/useLocalStorage";
 import Popup from "../components/Popup"; // Importe o Popup
 
 const FavoritePage = () => {
-  const [favImages] = useLocalStorage("favImages", []);
+  const [favImages, setFavImages] = useLocalStorage("favImages", []);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -30,16 +30,24 @@ const FavoritePage = () => {
 
           <div key={image.id} className="mb-4 break-inside-avoid relative">
             <img
+              onClick={() => openModal(image)}
               className="w-full rounded-lg"
               src={image.urls.thumb}
               alt={image.alt_description}
             />
 
             <button
-              className="absolute top-1 left-1 text-white hover:text-blue-600 transition-all"
-              onClick={() => openModal(image)}
+              className="absolute top-1 left-1 text-red-600 hover:text-blue-600 transition-all"
+              onClick={() => {
+                const isOk = confirm('Deseja remover esta imagem das favoritas?')
+                if (isOk) {
+                  setFavImages(
+                    favImages.filter((item) => item.urls.regular !== image.urls.regular)
+                  );
+                }
+              }}
             >
-              <ZoomIn />
+              <MinusCircle />
             </button>
           </div>
         ))}
