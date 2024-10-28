@@ -1,8 +1,22 @@
-# React + Vite
+# PicSort 📸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[**Acesse o PicSort aqui**](https://pic-sort.vercel.app)  
 
-Currently, two official plugins are available:
+**PicSort** é uma aplicação web que permite pesquisar e organizar imagens utilizando a API do Unsplash. Os usuários podem favoritar imagens e acessá-las em uma galeria personalizada.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
+- 🔍 **Pesquisa de imagens** diretamente da API do Unsplash.
+- ❤️ **Favoritar imagens** com um clique.
+- 🖼️ **Galeria personalizada** com as imagens favoritas.
+- 🔍 **Zoom** para visualização em modal.
+- 🌐 **Carregar mais resultados** através de paginação infinita.
+
+## 🛠️ Tecnologias
+- **React**  
+- **Vite**  
+- **TailwindCSS**  
+- **API Unsplash**  
+- **Lucide Icons**
+
+## 📄 Licença
+Este projeto está licenciado sob a MIT License.
